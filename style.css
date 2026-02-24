@@ -758,6 +758,38 @@ body {
   letter-spacing: 0.02em;
 }
 
+.qr-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background: var(--red);
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  transition: background var(--transition), transform var(--transition);
+  box-shadow: 0 4px 15px rgba(177, 18, 38, 0.3);
+}
+
+.qr-link-btn:hover {
+  background: var(--red-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(177, 18, 38, 0.4);
+}
+
+.qr-link-btn span {
+  font-size: 1.1rem;
+  transition: transform var(--transition);
+}
+
+.qr-link-btn:hover span {
+  transform: translate(2px, -2px);
+}
+
 /* ── CAMPAIGN BANNER ── */
 .banner-section {
   padding: 60px 0;
