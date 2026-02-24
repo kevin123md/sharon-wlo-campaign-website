@@ -2189,3 +2189,76 @@ body {
   top: 150px;
   /* adjust this value */
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Fix Buttons */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Quote Fix */
+  .quote-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* About Section */
+  .about-content {
+    flex-direction: column;
+  }
+
+  /* Stats Fix */
+  .about-stats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Why Section Grid */
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards Fix */
+  .why-item {
+    width: 100%;
+  }
+
+  /* Images Fix */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
