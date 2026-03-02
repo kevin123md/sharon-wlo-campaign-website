@@ -509,62 +509,21 @@ body {
   transform: translateY(-3px);
 }
 
-/* Vote placeholder */
-.vote-placeholder {
-  margin: 0 auto;
-  border: 2px dashed rgba(177, 18, 38, 0.4);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  max-width: 480px;
-  background: rgba(177, 18, 38, 0.05);
+/* Hero Vote Button */
+.hero-vote-btn {
+  font-size: 1.1rem !important;
+  padding: 16px 40px !important;
+  box-shadow: 0 10px 30px var(--red-glow) !important;
+  margin-top: 10px;
 }
 
-.vote-placeholder-inner {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.hero-vote-btn:hover {
+  transform: translateY(-5px) scale(1.05) !important;
+  box-shadow: 0 15px 45px var(--red-glow) !important;
 }
 
-.vote-qr-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  border: 1.5px dashed rgba(177, 18, 38, 0.35);
-  border-radius: 12px;
-  padding: 16px 20px;
-  background: rgba(177, 18, 38, 0.04);
-  min-width: 120px;
-}
-
-.vote-qr-box p {
-  font-size: 0.72rem;
-  color: var(--red-light);
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.08em;
-}
-
-.vote-btn-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.vote-soon-label {
-  font-family: var(--font-head);
-  font-weight: 800;
-  font-size: 1.2rem;
-  color: var(--white);
-}
-
-.vote-soon-sub {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-style: italic;
+.vote-now-wrapper {
+  margin-top: 30px;
 }
 
 .hero-scroll-hint {
@@ -1814,30 +1773,27 @@ body {
   margin-bottom: 40px;
 }
 
-.vote-btn-placeholder-large {
+.vote-now-btn-large {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--red-light), var(--red-dark));
+  padding: 30px 60px;
+  border-radius: 99px;
+  background: linear-gradient(135deg, var(--red-light), var(--red));
   font-family: var(--font-head);
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: white;
+  text-decoration: none;
   text-align: center;
-  line-height: 1.5;
-  cursor: default;
-  box-shadow: 0 16px 60px var(--red-glow), 0 0 0 0 rgba(177, 18, 38, 0.4);
+  box-shadow: 0 16px 60px var(--red-glow);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.vote-btn-placeholder-large small {
-  font-size: 0.75rem;
-  opacity: 0.8;
-  font-weight: 400;
+.vote-now-btn-large:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 24px 80px var(--red-glow);
 }
 
 .pulse-ring {
@@ -1864,29 +1820,7 @@ body {
   }
 }
 
-.vote-qr-large {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  border: 2px dashed rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  padding: 28px 36px;
-  background: rgba(255, 255, 255, 0.04);
-}
 
-.vote-qr-large p {
-  font-family: var(--font-head);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-}
-
-.vote-qr-large small {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.4);
-}
 
 .vote-note {
   font-size: 0.9rem;
